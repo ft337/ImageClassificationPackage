@@ -34,10 +34,29 @@ ImageClassificationPackage
 ==========================
 
 
-    Add a short description here!
+    This repository contains a trained model to classify electrodes from the Kaggle dataset: ``https://www.kaggle.com/datasets/thgere/spent-lithium-ion-battery-recyclingslibr-dataset``
+    Pictures can be calssified as having an "anode", "cathode", or "nothing". A notebook walk through of the training and testing is within `Notebooks` folder. 
+    
 
+Two scripts are provided to run prediction with this model on either a single image or a set of images. 
+    To install the package and run these scripts, follow these instructions: 
+    1. Clone the repository 
+    2. Download requirements ``pip install -r docs/requirements.txt``
+    3. Install the package locally ``pip install -e .`` 
 
-A longer description of your project goes here...
+    Two scripts are provided. If you would like to run inference on a single image, you can use:
+    ``single-predict --input_path <path_to_image.jpg>`` 
+
+    I have provided some sample data from the Chang Battery Dynamics and Engineering lab at Drexel. Thus, you can try:
+
+    ``single-predict --input_path data/lab_electrode_images/nothing/nothing1.jpg`` 
+
+    The other script is a gallery function, providing predictions for several images in a dataset. If your dataset is labelled, make a directory with subdirectories `anodes`, `cathodes`, and `nothing`.  To run this with our data, you may run:
+
+    ``gallery --input_path data/lab_electrode_images --known_labels``
+
+    If you have unlabelled data, exclude the `known_labels` flag.
+
 
 
 .. _pyscaffold-notes:
