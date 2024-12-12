@@ -41,7 +41,7 @@ ImageClassificationPackage
 Two scripts are provided to run prediction with this model on either a single image or a set of images. 
     To install the package and run these scripts, follow these instructions: 
 
-    1. Clone the repository 
+    1. Clone the repository, and set up a virtual environment
 
     2. Download requirements ``pip install -r docs/requirements.txt``
     
