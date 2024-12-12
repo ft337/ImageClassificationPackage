@@ -2,8 +2,7 @@ contourpy==1.3.1
 cycler==0.12.1
 filelock==3.16.1
 fonttools==4.55.3
-fsspec==2024.10.0
--e git+https://github.com/ft337/ImageClassificationPackage.git@597feaf7918a82ac5b22a6bf11a43ead84baeb58#egg=ImageClassificationPackage
+fsspec==2024.10.0s
 Jinja2==3.1.4
 kiwisolver==1.4.7
 MarkupSafe==3.0.2
